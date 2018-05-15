@@ -1,0 +1,17 @@
+NAME="babl"
+VERSION=0.1.48
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Any-to-any pixel format conversion library"
+DESCRIPTION="Babl is a dynamic, any to any, pixel format conversion library.
+It provides conversions between the myriad of buffer types images can be
+stored in. Babl doesn't only help with existing pixel formats, but also
+facilitates creation of new and uncommon ones."
+HOMEPAGE="http://www.gegl.org/babl/"
+SRC_URI="http://download.gimp.org/pub/babl/${VERSION%.*}/babl-${VERSION}.tar.bz2"
+
+PKG_NAMES="libbabl0.1_0 libbabl-devel"
+libbabl0_1_0_SUMMARY="${SUMMARY} (runtime)"
+libbabl0_1_0_CONTENTS="usr/bin/*-0.1-0.dll usr/lib/babl-0.1/ usr/share/doc/"
+libbabl_devel_SUMMARY="${SUMMARY} (development)"
+libbabl_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
